@@ -11,6 +11,7 @@ import Couple from './components/categories/Couple';
 import CouplePrice from './components/categories/CouplePrice';
 import Eft from './components/therapies/Eft';
 import Emdr from './components/therapies/Emdr';
+import Hypnotherapy from './components/therapies/Hypnotherapy';
 import Icv from './components/therapies/Icv';
 import Main from './pages/Main';
 import News from './components/news/News';
@@ -60,6 +61,7 @@ class App extends React.Component {
               <Route exact path='/emdr' component={Emdr} />
               <Route exact path='/eft' component={Eft} />
               <Route exact path='/at' component={At} />
+              <Route exact path='/hypnotherapy' component={Hypnotherapy} />
               <Route exact path='/reflexology' component={Reflexology} />
               <Route exact path='/sophrology' component={Sophrology} />
               {/* Description clients*/}
