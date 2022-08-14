@@ -31,6 +31,7 @@ const elements = [
     </ul>
     <li>Formation à la prise en charge des psycho-traumatismes transgénérationnels (2019)</li>        
     <li>Formation ICV pour enfants et adolescents (2020)</li>
+    <li>Formation en Hypnose Ericksonienne (2022)</li>
     </ul></div>],
     img: myYouth,
     alt: "",

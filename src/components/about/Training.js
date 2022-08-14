@@ -12,6 +12,7 @@ const elements = [
             <li>Traitement de la dissociation structurelle</li>
             <li><NavLink to="/icv" target="_blank" rel="nofollow noreferrer noopener">ICV</NavLink> (<i>Intégration des Cycles de la Vie</i>) niveau 1-2-3</li>
             <li>Prise en charge des psycho-traumatismes transgénérationnels</li>
+            <li><NavLink to="/hypnotherapy" target="_blank" rel="nofollow noreferrer noopener">Hypnose Ericksonienne</NavLink></li>
             <li><NavLink to="reflexology" target="_blank" rel="nofollow noreferrer noopener">Réflexologie polarisée</NavLink></li>
         </ul>],
     img: woman,

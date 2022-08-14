@@ -66,6 +66,10 @@ export const items = {
           link: "/at"
         },
         {
+          li: "Hypnothérapie",
+          link: "/hypnotherapy"
+        },
+        {
           li: "Réfléxologie polarisée",
           link: "/reflexology"
         },
