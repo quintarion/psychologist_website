@@ -1,0 +1,115 @@
+@import '../../style/main.scss';
+
+.subcategory {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    margin: auto;
+
+    a {
+        //margin-top: 2rem;
+        display: block;
+        text-align: center;
+    }
+
+    figcaption {
+        display: flex;
+        font-size: 1rem;
+        font-weight: 300;
+        justify-content: center;
+        letter-spacing: 0;
+        line-height: 1.4;
+        text-align: justify;
+        transform: translateY(-30px);
+        //overflow: auto;
+        //word-wrap: break-word;
+    }
+
+    figure {
+        padding-top: 1rem;
+        width: 24vw;
+    }
+
+    h3 {
+        text-align: center;
+        font-size: 22px;
+    }
+
+    // h3, p {
+    //     margin-bottom: 1.25rem;
+    // }
+
+    img {
+        border-radius: 50%;
+        display: block;
+        height: calc(100vw/7);
+        margin: 1.25rem auto;
+        padding-top: 1rem;
+        width: calc(100vw/7);
+    } 
+
+    &-text {
+
+        a {
+            padding-top: 1rem;
+        }
+
+        a::after {
+            content: '[...]';
+        }
+
+        a:hover::after {
+            content: '[ lire la suite ]';
+        }
+
+        p {
+            font-size: 16px;
+            
+            //transform: translateY(-30px);
+            width: 21vw;
+            margin: auto;
+        }
+    }
+
+    @media screen and (max-width:799px) {
+
+        flex-flow: column nowrap;
+
+        a {
+            display:block;
+            margin-top: 2rem;
+            text-align:center;
+        }
+    
+        figcaption {
+            text-align: center;
+            //width: 80vw;
+        }
+
+        figure {
+            margin-top: 1rem;
+            padding: 0;
+            width: 100%;
+        }
+
+        img {
+            border-radius: 50%;
+            //height: calc(100vw/7);
+            height: calc(100vw/3);
+            margin: 1.25rem auto;
+            width: calc(100vw/3);
+        }
+
+        p {
+            width: auto;
+        }
+    }
+
+    @media screen and (max-width: 799px) {
+    
+    }
+
+    @media screen and (max-width: 545px) {
+    
+    }
+}

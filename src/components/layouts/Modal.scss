@@ -1,0 +1,214 @@
+@import '../../style/main.scss';
+
+//overflow: scroll !important;
+
+.modal_overlay {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+
+hr {
+    color:cadetblue;
+}
+
+.btn-security-save2 .btn-save-modif{
+    //cursor: pointer;
+}
+
+.container-security-save {
+    cursor: grab !important;
+    position: fixed !important;
+    margin: 10% 5%;
+    z-index:1 !important;
+
+    h2 {
+        font-weight: 400;
+    }
+
+    h3 {
+        font-size: 18px !important;
+        font-weight: 400;
+    }
+
+    p, h2, h3, li, table {
+        letter-spacing: 0.134em;
+        padding-left: 0;
+        padding-right: 0;
+        text-align: left !important;
+        text-decoration: none; 
+        vertical-align: baseline;
+    }
+
+    table {
+        @include table;
+        cursor: grab !important;
+        margin: auto;
+
+        td {
+            text-align: left;
+        }
+
+        th, caption {
+            color: #241C15;
+            font-family: "Lato",serif;
+            font-size: 16px !important;
+            font-weight: 300;
+            letter-spacing: 0;
+            line-height: 25px;
+            text-align: justify;
+            overflow: auto;
+            word-wrap: break-word;
+        }
+
+        caption {
+            font-weight: 400;
+            text-align: center;
+        }
+    }
+    
+  .display-block-save {
+    @include shadow;
+    align-items: center;
+    background-color: $bgd-primary;
+    border: solid 2px #241C15;
+    color: #241C15;
+    cursor: grab !important;
+    display: block;
+    height: 60vh;
+    margin-bottom: 5%;
+    overflow: auto;
+    padding-left:0 !important;
+    text-align: center;
+  
+    .modal-security-save-bloc-title {
+        background-color: #f2f4f8;
+        cursor: grab !important;
+        position: sticky;
+        top: 0;
+        /* curve effect */
+        border-bottom-left-radius: 20%;
+        border-bottom-right-radius: 90%;
+      
+        h2 {
+        font-size: 18px !important;
+        letter-spacing: .034rem !important;
+        text-align: center !important;
+      }
+      
+    .security-modal-save {
+        cursor: grab !important;
+        font-size:16px;
+        padding: 1rem;
+    }
+  }
+
+  .container-open-security-save {
+    cursor: grab !important;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+
+    img {
+        background-image: url(../../assets/pictures/blob-beige.svg);
+        width: 100%;
+    }
+
+    .text-modal-security-save {
+        cursor: grab !important;
+    
+        p, li {
+            color: #241C15;
+            font-family: "Lato",serif;
+            font-size: 16px !important;
+            font-weight: 300;
+            letter-spacing: 0;
+            line-height: 25px;
+            overflow: auto;
+            text-align: justify;
+            word-wrap: break-word;
+        }
+    }
+}
+
+.container-open-security-save {
+    cursor: grab !important;
+
+    .scroller {
+        width: 300px;
+        height: 100px;
+        overflow-y: scroll;
+        scrollbar-color: rebeccapurple green;
+        scrollbar-width: thin;
+    }
+
+    .btn-modal-close-security-save {
+        cursor: grab !important;
+        width: 10vw;
+        margin: auto;
+        margin-bottom: 1rem;
+        background-color: transparent;
+        color: #241C15;
+        font-weight: 300;
+        letter-spacing: 0;
+        line-height: 1.3;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 34px;
+        font-family: "Lato",serif;
+        border: none;
+
+            button {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+  .display-none-save {
+    display: none;
+    
+  }
+}
+ 
+@media screen and (max-width: 799px) {
+    
+    .modal_overlay {
+        
+        h2 {
+            font-size: .77rem !important;
+        }
+    }
+
+    .container-security-save {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90vw;
+        top: 15%;
+    }
+
+    .container-security-save .display-block-save {
+        align-items: center;
+        background-color: $bgd-primary;
+        box-shadow: 3px 3px 3px -1px rgba(17, 30, 71, 0.15);
+        color: #241C15;
+        display: block;
+        height: 70vh;
+        margin-bottom: 5%;
+        padding-left: 0 !important;
+        text-align: center;
+        overflow: auto;
+    }
+
+    .container-open-security-save {
+
+        img {
+            width: 20vw !important;
+        }
+        
+    }
+}

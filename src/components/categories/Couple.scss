@@ -1,0 +1,78 @@
+@import '../../style/main.scss';
+
+#couple {
+    img {
+        width: 20%;
+    }
+}
+
+.couple {
+    align-items: center;
+    box-sizing: border-box;
+    display:grid;
+    margin-top: -10vh;
+    place-content: center;
+    
+    img {
+        border-radius: 10% 110% / 50% 30% !important;
+    }
+
+  
+    .card {
+        position: relative;
+        padding: 2rem;
+        clip-path: circle(5% at 95% 11%);
+        transition: all ease-in-out .3s;
+        background-color:rgba(188, 176, 142, 1);
+        max-width: 80vw;
+        margin-left: auto;
+        margin-right: auto;
+        z-index: 1;
+            
+    &_infoicon {
+        position: absolute;
+        top: 5rem;
+        right: 1.5rem;
+        transition:ease-out .3s;
+        z-index: 1;
+    
+        i {
+            @include link;
+            color: #ffff;
+        }
+    }
+          
+        &:hover, &:focus {
+            clip-path: circle(75%);
+            border-radius: 3rem;
+            outline: none;
+    
+            .card_infoicon {
+                opacity: 0;
+            }
+        }
+    }
+    
+    @media screen and (max-width: 799px) {
+        .card {
+            display: none;
+        }
+
+        img {
+            display: flex;
+            margin: auto;
+        }
+    }
+}
+
+@media screen and (max-width: 799px) {
+
+    #couple {
+        img {
+            width: 45%;
+            display: flex;
+            margin: auto;
+        }
+    }
+
+}

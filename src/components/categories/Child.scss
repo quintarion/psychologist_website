@@ -1,0 +1,33 @@
+@import '../../style/main.scss';
+
+#child {
+
+    img {
+        width: 20%;
+        background: url(../../assets/pictures/blob-twingo.svg);
+        background-repeat: no-repeat;
+    }
+}
+
+.child {
+    margin-top: -15vh; 
+}
+
+.sticky-up {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+@media screen and (max-width: 799px) {
+
+    #child {
+        img {
+            width: 45%;
+            display: flex;
+            margin: auto;
+        }
+    }
+
+}

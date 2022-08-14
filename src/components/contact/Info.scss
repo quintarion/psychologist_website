@@ -1,0 +1,28 @@
+@import '../../style/main.scss';
+
+.page-info {
+    margin: auto;
+    max-width: 85vw;
+    padding-top: 10vh;
+
+    h2 {
+        @include title-medium;
+        margin-bottom: 3rem;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &_content {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    @media screen and (max-width:799px) { 
+        padding: 2rem;
+
+        h2 {
+            font-size: 1.4rem !important;
+            margin-bottom: 1rem;
+        }
+    }
+}

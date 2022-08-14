@@ -1,0 +1,86 @@
+@import '../../style/main.scss';
+
+.footer {
+    padding-top: 10vh;
+
+    hr {
+        background-color: #241C15;
+        border: 0;
+        height: 1.75px;
+        margin: auto;
+        padding: 0;
+        width: 90%;
+    }
+
+    &_content {
+        padding-bottom: 2rem;
+    }
+
+    &_bottom {
+        display: flex;
+        justify-content: flex-end;
+        padding: 1rem 3rem 1rem;
+
+        p {
+            @include link;
+            cursor: none;
+            font-size: 11px;
+            font-weight: 200;
+        }
+
+        div:nth-child(2) {
+            @include link;
+            font-size: 11px;
+            font-weight: 200;
+            padding: .2rem 2rem;
+
+            i {
+                text-decoration: underline;
+            }
+            
+            &:hover {
+                color: $bgd-primary;
+            }
+        }
+    }
+
+    /**
+    *
+    * Smaller screen + Mobile
+    *
+    */
+
+    @media screen and (max-width:799px) {
+
+        background-color: transparent;
+        font-size: .7rem;
+        padding: 1.5rem 0 1.5rem;
+
+        hr {
+            height: 1.2px;
+            width: 60%;
+        }
+
+        &_content {
+            display: none;
+        }
+
+        &_bottom {
+            flex-direction: column;
+            
+            p, div menu i {
+                font-size: .76rem !important;
+                letter-spacing: 0.02rem !important;
+                text-align: center;
+            }
+
+            div:nth-child(2) {
+                text-align: center;
+            }
+        }
+
+        &_container {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,62 @@
+@import '../../style/main.scss';
+
+.career {
+    background-color: $bgd-primary;
+    background-image: url('../../assets/pictures/blob_grey4.svg');
+    background-repeat: no-repeat;
+    background-position:  70% 19%;
+    background-size: 100%;
+    cursor: grab;
+
+    h2 {
+        margin-top: 5vh;
+    }
+
+    h3 {
+        text-align: left;
+    }
+    
+    img {
+        border-radius: 10% 110% / 50% 70%;
+        margin-left: 1rem;
+        width: 550px !important;
+    }
+
+    .layout_container-img {
+        order: 2;
+    }
+
+    .layout_container-text {
+        order: 1;
+    }
+
+    @media screen and (max-width:799px) {
+
+        background-image: none;
+
+        h2, h3 {
+            text-align: center;
+            margin-top: 0;
+            padding-bottom: 0;
+        }
+
+        .layout_container-img {
+            background-image: url('../../assets/pictures/myYouth.jpg');
+            background-position: center;
+            background-size: 150%;
+            background-repeat: no-repeat;
+        }
+
+        &-menu {
+            display: inline-block;
+            padding: 2rem 2rem .9rem .9rem;
+        }
+
+        .sticky-up {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }  
+    }
+}

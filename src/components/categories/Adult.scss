@@ -1,0 +1,46 @@
+@import '../../style/main.scss';
+
+#adult {
+  img {
+    background: url(../../assets/pictures/blob14.svg);
+    background-repeat: no-repeat;
+    width: 20%;
+  }
+}
+
+.pageTherapy {
+  margin-top: -15vh;
+}
+
+.sticky-up {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 100;
+}
+
+@media screen and (max-width: 799px) {
+
+  #adult {
+    img {
+      display: flex;
+      margin: auto;
+      width: 45%;
+    }
+  }
+  
+  img {
+    display: flex;
+    margin: auto;
+  }
+
+  &-menu {
+    display: inline-block;
+    padding: 2rem 2rem .9rem .9rem;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+}
+

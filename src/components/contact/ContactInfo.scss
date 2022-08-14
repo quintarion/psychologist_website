@@ -1,0 +1,63 @@
+@import '../../style/main.scss';
+
+.contactInfo {
+    background-image: url('../../assets/icons/speaking-bubble.png'), url('../../assets/pictures/blob10.svg');
+    background-position: left;
+    background-repeat: no-repeat no-repeat;
+    background-size: 50% 100%;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    margin: auto;
+    width: 100vw;
+
+    a, address, h3, h4, p {
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+
+    a, address, h3, h4, p, u  {
+        color:#241C15 !important;
+        font-family: "Lato",serif !important;
+        font-size: 16px !important;
+        font-style: normal;
+        font-weight: 300 !important;
+        text-align: center;
+    }
+
+    a {
+        padding: .5rem 0;
+    }
+
+    a:hover {
+        background-color: #bde9db;
+    }
+
+    i {
+        font-size: 1.5rem;
+    }
+    
+    @media screen and (max-width:799px) {
+        align-content: center;
+        align-items: center;
+        background-image: none;
+        height: auto;
+        justify-content: center;
+        
+        a, address, h3, h4, p, u  {
+            padding-top: .5rem;
+        }
+
+        h2 {
+            font-size: 1.4rem !important;
+        }
+    }
+
+    @media screen and (max-width:545px) {
+
+        p {
+            font-size: 80%;
+        }
+    }
+}

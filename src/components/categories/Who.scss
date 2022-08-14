@@ -1,0 +1,81 @@
+@import '../../style/main.scss';
+
+
+////////////////////////////////
+
+.who {
+    padding-top: 4rem;
+
+    h2 {
+        padding-bottom: 2rem;
+    }
+  
+    &_container {
+        margin: auto;
+        @include width;
+
+        h2 {
+            padding-bottom: 2rem;
+            text-align: center;
+            text-transform: uppercase; 
+        }
+
+        .one {
+            img {
+                background-image: url('../../assets/pictures/blob.svg');
+            }
+
+            img:hover {
+                @include hover-picture($child);
+            }
+        }
+
+        p {
+
+            mark {
+                background-color: #fffbcb;
+            }
+        }
+
+        .three {
+            img {
+                background-image: url('../../assets/pictures/blob5.svg');
+            } 
+
+            img:hover {
+                @include hover-picture($couple);
+            }
+        }
+
+        .two {
+            img {
+                background-image: url('../../assets/pictures/blob9.svg');
+            }
+
+            img:hover {
+                @include hover-picture($adult);
+            }
+        }
+
+        &_flex {
+            align-content: space-between;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+
+        }
+    }
+
+    @media screen and (max-width:799px) {
+        margin: auto;
+        padding: 0;
+        padding-top: 0;
+
+        &_container {
+
+            p {
+                padding: 0;
+            }
+        }
+    }
+}

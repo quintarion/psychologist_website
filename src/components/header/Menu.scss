@@ -1,0 +1,94 @@
+@import '../../style/main.scss';
+
+.menu {
+    align-items: baseline;
+    display: flex;
+    flex-flow: row nowrap;
+    height: auto;
+    z-index: 200;
+
+    &-title:hover {
+        transition: 2s 3s;
+    }
+
+    /* Hide the sub-menu */
+    &-sub {
+        display: none;
+    }
+
+    ul li {
+        list-style: none;
+    }
+
+    /* on mouseover display the submenu */
+    ul li:hover .menu-sub {
+        background-color: $bgd-primary;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    /* position : absolute, remove from normal page flow and no impact the content */
+    &-sub {
+        display: none;
+        height: auto;
+        padding-top: 10vh;
+        position: absolute;
+        width: 100vw;
+        z-index: 100;
+    }
+
+    &-sub li {
+        padding: 0 0.8rem !important;
+        text-align: left;
+        transform: translateX(-10px);
+    }
+
+    a {
+        color: #454545 !important;
+        font-family: NeutraText-Light,Arial,sans-serif;
+        font-size: 11px;
+        font-weight: 100;
+        line-height: 2rem;
+        text-transform: uppercase;
+    }
+
+    a:hover {
+        font-weight: 900;
+    }
+
+    /**
+    *
+    * Smaller screen + Mobile
+    *
+    */
+
+    @media screen and (max-width: 799px) {
+        flex-direction: column;
+        padding-bottom: 1rem;
+
+        /* delete the arrow symbol after the title menu */
+        &-title:hover::after {
+            content: ""; 
+        } 
+
+        &-sub {
+            background-color: $bgd-primary;
+            padding-top: 0 !important;
+
+            li {
+                padding-top: 0;
+            }
+        }
+
+        &-wrap {
+            margin: 0;
+
+            ul:first-child {
+                height: auto;
+                margin: 1.3rem auto 0 1rem;
+                width: auto;
+            }
+        }
+    }
+}

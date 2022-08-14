@@ -1,0 +1,12 @@
+@import './../../style/main.scss';
+
+#at {
+    img {
+        background-image: url('../../assets/pictures/blob13.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 30%;
+        // width: 30vw;
+        // height: 30vw;
+    }
+}

@@ -1,0 +1,38 @@
+@import '../../style/main.scss';
+
+.training {
+    background-image: url('../../assets/pictures/blob16.svg');
+    background-repeat: no-repeat;
+    background-size: 50%;
+    height: 100vh;
+
+    img {
+        border-radius: 50% 70%;
+        width: 450px !important;
+    }
+    
+    .layout_container-img {
+        order: 1;
+    }
+
+    .layout_container-text {
+        order: 2;
+
+        li {
+            list-style: inside url('../../assets/icons/chevron-right.svg');
+        }
+    }
+
+    @media screen and (max-width:799px) {
+
+        background-image: none;
+        height: auto;
+
+        .layout_container-img {
+            background-image: url('../../assets/pictures/woman.jpg');
+            background-position: center;
+            background-size: 150%;
+            background-repeat: no-repeat;
+        }
+    }
+}

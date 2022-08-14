@@ -1,0 +1,75 @@
+@import '../../style/main.scss';
+
+.atHome {
+    align-items: flex-end;
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
+    
+    a {
+        align-items: center; 
+        background-color: transparent;
+        color: $color-link;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        text-align: center;
+        text-decoration: none;
+        width: 120px;
+        z-index: 100;
+    }
+
+    a:hover, a:focus {
+        cursor: pointer;
+
+        span:first-child {
+            align-items: center;
+            background-color: #bde9db;
+            border: 0px solid $color-link;
+            position: relative;
+        }
+
+        span:first-child::before {
+            content: '';
+            background-color: transparent;
+        }
+    }
+
+    span:first-child {
+        border: 1px solid black;
+        border-radius: 50%;
+        display: flex;
+        height: 48px;
+        justify-content: center;
+        margin-bottom: 10px;
+        position: relative;
+        width: 48px;
+    }
+
+    span:first-child::before {
+        content: '';
+        background-color: #bde9db;
+        border-radius: 50%;
+        display: inline-block;
+        height: 48px;
+        left: 9px;
+        -o-transition: all 0.3s;
+        position: absolute;
+        top: -9px;
+        transition: all 0.3s;
+        -webkit-transition: all 0.3s;
+        width: 48px;
+        z-index: -1;
+    }
+
+    span:last-child {
+        color: #454545 !important;
+        font-family: NeutraText-Light,Arial,sans-serif;
+        font-size: 11px;
+        text-transform: uppercase;
+    }
+
+    @media screen and (max-width: 799px) {
+    
+    }
+}

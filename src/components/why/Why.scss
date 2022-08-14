@@ -1,0 +1,52 @@
+@import '../../style/main.scss';
+
+.why {
+
+    &_container {
+        margin: auto;
+        @include width;
+
+        h2 {
+            @include title-medium;
+            text-transform: uppercase;
+        }
+
+        i {
+            font-size: 30px;
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: disc !important;
+            padding: 2rem 0;
+        }
+    }
+
+    @media screen and (max-width: 799px) {
+        margin: visible;
+
+        &_container {
+
+            p {
+                padding: 0;
+            }
+
+            h2 {
+                font-size: 1.4rem !important;
+                padding: .5rem;
+                text-align: center;
+            }
+
+            ul {
+                text-overflow: "-";
+                white-space: normal !important; //nowrap break-space//
+
+                li {
+                    font-family: "Lato", serif;
+                    text-overflow: "-";
+                    white-space: normal !important; //nowrap break-space//
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,59 @@
+@import '../../style/main.scss';
+
+.sitemap {
+    display: flex;
+    flex-flow: row nowrap;
+    flex-grow: 1;
+    justify-content: space-evenly;
+    padding-top: 2rem;
+
+    a {
+        font-size: .8rem;
+    }
+
+    div {
+        width: calc(75vw/4);
+    }
+
+    h3 {
+        color: $color-link;
+        font-family: Helvetica,Arial,Verdana,sans-serif !important;
+        font-size: .8rem !important;
+        font-weight: bold;
+        padding-bottom: 1rem;
+        text-transform: uppercase;
+    }
+
+    li {
+        list-style: none;
+        text-align: left;
+
+        &:hover {
+            background-color: #bde9db;
+        }
+    }
+
+    ul {
+        list-style: none;
+    }
+    
+
+    /**
+    *
+    * Smaller screen + Mobile
+    *
+    */
+
+    @media screen and (max-width:799px) {
+
+        flex-direction: column;
+
+        section {
+            padding-bottom: 1.5rem;
+
+            a {
+                padding-left: .5rem;
+            }
+        }
+    }
+}

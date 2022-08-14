@@ -1,0 +1,11 @@
+@import './../../style/main.scss';
+
+.button {
+    @include nav;
+    background-color: transparent;
+    border: none;
+
+    // &:hover {
+    //     @include button-hover;
+    // }
+}

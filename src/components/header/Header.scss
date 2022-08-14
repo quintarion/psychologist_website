@@ -1,0 +1,159 @@
+@import '../../style/main.scss';
+
+/* scroll animation */
+.active {
+    transition: all 500ms ease-in;
+    visibility: visible;
+}
+
+.hidden {
+    transform: translate(0, -100%);
+    transition: all 500ms ease-out;
+    visibility: hidden;
+}
+
+.header {
+    /* adds animation for all transitions */ 
+    -webkit-transition: .25s ease-in-out; 
+    -moz-transition: .25s ease-in-out; 
+    -o-transition: .25s ease-in-out; 
+    transition: .25s ease-in-out; 
+
+    nav {
+        position: absolute; //"Fix" the element //
+        align-items: baseline; /* by default: align-items: strech -> child elements' heights = the container's height */
+        align-self: flex-start;
+        background-color: $bgd-primary;
+        display: flex;  /* flex container */
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        left: 0;
+        padding: 1rem 5%;
+        width: 100vw;
+
+        &:hover {
+            height: auto;
+            //background-image: url('../../assets/pictures/birds.jpg');
+            background-size: cover;
+            transition: background-color 1s ease, height 1s linear;
+        }
+    }
+
+    a {
+        pointer-events: auto;
+    }
+
+    a:hover {
+        text-decoration: none; 
+    }
+
+    &-home, &-links {
+        
+        a, li {
+            padding: 0 1rem;
+            text-transform: uppercase;
+        }
+    }
+
+    img {
+        background-image: url('../../assets/pictures/blob-beige.svg');
+        margin: -.8rem 0 0 -.8rem;
+    }
+
+    &-links {
+        align-self: flex-end;
+        color: beige;
+
+        /* hover effect */
+        @include hoverEffect;
+        
+        a {
+            padding: 0;
+        }
+    }
+
+    .logo {
+        width: 5rem;
+    }
+
+    .logo:hover {
+        @include animate(icon-bounce, 0.5s, alternate);
+    }
+
+    nav {
+        margin-right: 3rem;
+    }
+    
+    .toggle {
+        display: none;
+
+        i {
+            font-size: 22px;
+        }
+    }
+
+    /**
+    *
+    * Smaller screen + Mobile
+    *
+    */
+
+    @media screen and (max-width: 799px) {
+        
+        display: inline;
+        flex-direction: column; /* change the direction of the container */
+        margin-top: 0;
+
+            nav {
+                height: 100vh !important;
+                background-color: $bgd-primary !important;
+
+                &:hover {
+                    background-image: none;
+                    height: 100vh;
+                }
+            }  
+
+        .closed {
+            display: none;
+        }
+        
+        &-home {
+            align-items: center;
+            display: flex;
+            justify-content: flex-end;
+        }
+        
+        &-home, &-links {  
+            a, li {
+                padding: 0;
+            }
+        }
+
+        &-links {
+            align-items: flex-end;
+
+            a {
+                padding: 0;
+            }
+        }
+
+        .opened {
+            top: 0;
+        }
+
+        .toggle {
+            display: inline-block;
+            padding: 1.5rem 2rem 2rem;
+            z-index: 1;
+        }
+        
+    }
+
+    @media screen and (max-width: 545px) {
+
+        .toggle {
+            font-size: 2rem;
+        }
+    }
+}
