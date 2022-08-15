@@ -21,6 +21,7 @@
         }
 
         .one {
+            
             img {
                 //background-color: $color-blue;
                 background-image: url('../../assets/pictures/blob8.svg');
@@ -29,21 +30,21 @@
             img:hover {
                 @include hover-picture($icv);
             }
-           
         }
     
         .two {
+
             img {
-                //background-color: $color-mallow;
-                background-image: url('../../assets/pictures/blob13.svg');
-            }
+                background-image: url('../../assets/pictures/blob16.svg');
+            } 
 
             img:hover {
-                @include hover-picture($at);
+                @include hover-picture($eft);
             }
         }
     
         .three {
+
             img {
                 //background-color: $color-green;
                 background-image: url('../../assets/pictures/blob6.svg');
@@ -53,9 +54,22 @@
                 @include hover-picture($couple);
             }
         }
+
+        .four {
+
+            img {
+                //background-color: $color-mallow;
+                background-image: url('../../assets/pictures/blob13.svg');
+            }
+
+            img:hover {
+                @include hover-picture($at);
+            }
+        }
     }
 
     &__flex {
+        max-width: 80vw;
         align-content: space-between;
         display: flex;
     }

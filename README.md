@@ -119,6 +119,3 @@ npm install --save sweetalert2
 ### `reactstrap`
 npm install bootstrap
 npm install reactstrap react react-dom# psychologist_website
-
-### `# production /build`
-delete to gitignore
