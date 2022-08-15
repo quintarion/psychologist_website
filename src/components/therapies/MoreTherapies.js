@@ -3,6 +3,7 @@ import Subcategory from '../layouts/Subcategory';
 import maya_7 from '../../assets/icons/maya_7.png';
 import maya_5 from '../../assets/icons/maya_5.png';
 import maya_8 from '../../assets/icons/maya_8.png';
+import maya_9 from '../../assets/icons/noun-maya-symbol.png';
 import './MoreTherapies.scss';
 
 const elements = [
@@ -13,6 +14,15 @@ const elements = [
         title: "A.T",
         text: [<p>L'analyse transactionnelle, appelée aussi AT, est une théorie de la personnalité, des rapports sociaux et de la communication . . .</p>],
         path: "/at",
+        page: "[...]",
+    },
+    {
+        class: "four",
+        img: maya_9,
+        alt: "",
+        title: "Hypnothérapie",
+        text: [<p>Méthode utilisée l'Hypnose Ericksonienne.</p>],
+        path: "/hypnotherapy",
         page: "[...]",
     },
     {

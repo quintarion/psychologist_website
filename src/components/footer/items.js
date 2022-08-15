@@ -34,6 +34,10 @@ export const items = {
               section: 'A.T'
           },
           {
+              path: '/hypnotherapy',
+              section: 'Hypnothérapie'
+          },
+          {
               path: '/reflexology',
               section: 'Réflexologie Polarisée'
           }
