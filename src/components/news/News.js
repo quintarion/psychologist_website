@@ -2,7 +2,6 @@ import React from "react";
 import Header from '../header/Header';
 import LayoutNews from '../news/LayoutNews';
 import './News.scss';
-import pregnant from '../../assets/icons/pregnant.png';
 //import { Form } from "reactstrap";
 
 const elements = [
@@ -17,9 +16,8 @@ const elements = [
     {
         icon: '',
         title: 'Troubles anxieux',
-        date: '2021-07-12',
         datetime: '07/12/2021',
-        date: '21/12/2021',
+        date: '12/07/2021',
         more: '',
         path: 'https://www.ameli.fr/assure/sante/themes/troubles-anxieux-anxiete/traitement'
     },

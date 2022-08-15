@@ -37,7 +37,7 @@ class Contact extends React.Component {
                     <p>A.P.M.R &emsp;<i class="fas fa-wheelchair"></i></p>
                     <p>Praticienne francophone</p>
                     <br/>
-                    <a href="https://goo.gl/maps/jTw3MxJvPuxNK2Gd7" target="_blank">Comment m'y rendre ?</a>
+                    <a href="https://goo.gl/maps/jTw3MxJvPuxNK2Gd7" target="_blank" rel="noreferrer noopener">Comment m'y rendre ?</a>
                     <br/>
                     <h4><u>Prendre un rendez-vous</u></h4>
                     <p>La prise de rendez-vous se fait par téléphone au : 

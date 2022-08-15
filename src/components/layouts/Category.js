@@ -1,5 +1,4 @@
 import React from "react";
-import { Parallax } from 'react-scroll-parallax';
 import {NavLink} from 'react-router-dom';
 import './Category.scss';
 
