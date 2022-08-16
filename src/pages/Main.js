@@ -13,20 +13,20 @@ import Why from '../components/why/Why';
 
 import './Main.scss';
 
-const pages = [
-    {
-        path: '/#about'
-    },
-    {
-        path: '/#step'
-    },
-    {
-        path: '/#who'
-    },
-    {
-        path: '/#why'
-    }
-]
+// const pages = [
+//     {
+//         path: '/#about'
+//     },
+//     {
+//         path: '/#step'
+//     },
+//     {
+//         path: '/#who'
+//     },
+//     {
+//         path: '/#why'
+//     }
+// ]
 
 const Main = () => {
     return (
