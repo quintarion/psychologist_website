@@ -2,8 +2,8 @@
   "name": "front",
   "version": "0.1.0",
   "private": true,
-  "homepage": ".",
-  "start_url": ".",
+  "homepage": "https://cheminvers.netlify.app/",
+  "start_url":"https://cheminvers.netlify.app/",
   "dependencies": {
     "@fullcalendar/core": "^5.3.1",
     "@fullcalendar/daygrid": "^5.3.2",
