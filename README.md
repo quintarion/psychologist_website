@@ -119,3 +119,7 @@ npm install --save sweetalert2
 ### `reactstrap`
 npm install bootstrap
 npm install reactstrap react react-dom# psychologist_website
+
+### `Netlify Deployment`
+sudo npm install -g serve
+serve -s build
