@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Route, Switch } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import { ScrollToTop } from 'react-router-scroll-to-top';
 //import { Route, Switch } from "react-router-dom";
 //import ReCAPTCHA from "react-google-recaptcha";
@@ -54,8 +54,7 @@ class App extends React.Component {
       <div className="App">
         
           <div>
-          <ScrollToTop />
-
+           <ScrollToTop/>
             <Switch>
               {/* Showcase*/}
               <Route exact path='/' component={Main} />
