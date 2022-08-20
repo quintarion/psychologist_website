@@ -10,7 +10,11 @@
     <!--<meta http-equiv = "Content-Security-Policy" content = "script-src 'self'; style-src 'self' ">-->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' '; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline' 'unsafe-eval';">
+    <!--ADD CSP :
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'">-->
+    <!--REMOVE CSP :-->
+    <meta http-equiv="Content-Security-Policy" content="object-src font-src img-src media-src font-src 'none'" />
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src 'none' '; img-src https://* 'none'; child-src 'none'; script-src 'none' 'unsafe-inline' 'unsafe-eval'; style-src 'none' 'unsafe-inline' 'unsafe-eval'; font-src 'none'; frame-src 'none'; img-src 'none'; media-src 'none';">-->
     <meta
       name="description"
       content="Web site created using create-react-app"
