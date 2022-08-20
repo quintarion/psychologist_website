@@ -1,5 +1,7 @@
 import React from 'react';
-import { Route, Switch } from "react-router-dom";
+import { BrowserRouter as Route, Switch } from "react-router-dom";
+import { ScrollToTop } from 'react-router-scroll-to-top';
+//import { Route, Switch } from "react-router-dom";
 //import ReCAPTCHA from "react-google-recaptcha";
 import Adult from './components/categories/Adult';
 import AdultPrice from './components/categories/AdultPrice';
@@ -52,6 +54,8 @@ class App extends React.Component {
       <div className="App">
         
           <div>
+          <ScrollToTop />
+
             <Switch>
               {/* Showcase*/}
               <Route exact path='/' component={Main} />
@@ -74,6 +78,8 @@ class App extends React.Component {
               {/* News  */}
               <Route exact path='/news' component={News} />
             </Switch>
+            
+
           </div>
 
         {/* <header className="App-header">

@@ -123,3 +123,6 @@ npm install reactstrap react react-dom# psychologist_website
 ### `Netlify Deployment`
 sudo npm install -g serve
 serve -s build
+
+### `scroll to top`
+npm install react-router-scroll-to-top
